@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectDB.view.DbOverviewController">
+   <children>
+      <BorderPane layoutY="4.0" maxHeight="-Infinity" prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="59.0" prefWidth="261.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleAudio" text="Audio" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0" />
+                  <Button alignment="CENTER" layoutX="164.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleVideo" text="Video" AnchorPane.topAnchor="30.0" />
+                  <Button layoutX="166.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleSoftware" text="Software" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <HBox fillHeight="false" maxHeight="-Infinity" prefHeight="100.0" prefWidth="200.0" spacing="45.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="audioButtons" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleCd" prefWidth="69.0" text="CD" visible="false" VBox.vgrow="NEVER">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="25.0" top="40.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleConcertVideo" prefWidth="69.0" text="Concert" visible="false">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="25.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleVinyl" prefWidth="69.0" text="Vinyl" visible="false">
+                           <VBox.margin>
+                              <Insets left="25.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="videoButtons" prefHeight="332.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleDvd" prefWidth="69.0" text="DVD" visible="false">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="17.0" top="40.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleVhs" prefWidth="69.0" text="VHS" visible="false">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="17.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleBluray" prefWidth="69.0" text="BluRay" visible="false">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="17.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="programButtons" prefHeight="301.0" prefWidth="121.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handlePrograms" prefWidth="74.0" text="Program">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="14.0" top="40.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleGames" prefWidth="74.0" text="Game">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="14.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </center>
+         <bottom>
+            <ImageView fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../resources/green_mediaplayer.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
